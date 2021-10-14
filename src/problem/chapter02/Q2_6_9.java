@@ -23,7 +23,6 @@ public class Q2_6_9 {
             boolean isPrime = true;
 
                 for (int j = 2; j < i; j++) {
-                    System.out.println(i);
                     if (i % j == 0) {
                         isPrime = false;
                         break;

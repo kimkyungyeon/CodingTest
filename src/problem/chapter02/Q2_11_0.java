@@ -2,29 +2,31 @@ package problem.chapter02;
 
 import java.util.Scanner;
 
-public class Q2_7_0 {
+public class Q2_11_0 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        int[] arr = new int[n];
+        int[][] arr = new int[n][5];
         for (int i = 0; i < n; i++) {
-            arr[i] = sc.nextInt();
+            for (int j = 0; j < 5; j++) {
+                arr[i][j] = sc.nextInt();
+            }
         }
+
 
         System.out.println(solution(n, arr));
     }
 
-    private static int solution(int n, int[] arr) {
+    private static int solution(int n, int[][] arr) {
         int answer = 0;
-        int tmp = 1;
-        for (int x : arr) {
-            if (x == 1) {
-                answer += tmp;
-                tmp++;
-            } else {
-                tmp =1;
+        int[] tmp = new int[n];
+
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < n; j++) {
+
             }
         }
+
 
         return answer;
     }
