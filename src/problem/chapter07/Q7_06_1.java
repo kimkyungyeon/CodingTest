@@ -2,6 +2,7 @@ package problem.chapter07;
 
 import java.util.Arrays;
 
+//부분집합 구하기 DFS
 public class Q7_06_1 {
     static int n;
     static int[] ch;
@@ -11,7 +12,7 @@ public class Q7_06_1 {
             String tmp = "";
             for (int i = 1; i <= n; i++) {
                 if (ch[i] == 1) {
-                    tmp += i;
+                    tmp += i+ " ";
                 }
             }
             if (tmp.length() > 0) {
